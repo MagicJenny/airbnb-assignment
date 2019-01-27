@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Jennifer Airbnb News</title>
+  </head>
+  <body>
+    <!-- Bootstrap
+    xs - Extra small devices, phones (<576px)
+    sm - Small devices, phones (≥576px)
+    md - Medium devices, tablets (≥768px)
+    lg - Large devices, Desktops (≥992px)
+    xl - Extra Large devices, Large Desktops (≥1200px)
+    -->
+    <nav class="navbar navbar-expand-xl py-0 position-fixed border-bottom w-100 bg-white" id="navbar">
+      <!-- nav for xl screens -->
+
+      <div class="d-none d-xl-flex flex-grow-1" id="xlNavbar">
+        <a class="navbar-brand py-0 pr-0 pl-2 font-weight-light" href="#"><i class="couch fas fa-couch ml-1 mr-4"></i>Airbnb Press Room</a>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link py-0 px-2" href="#"><div class="px-2 font-weight-light">News</div></a>
+          <a class="nav-item nav-link py-0 px-2" href="#"><div class="px-2 font-weight-light">Features</div></a>
+          <a class="nav-item nav-link py-0 px-2" href="#"><div class="px-2 font-weight-light">About Us</div></a>
+          <a class="nav-item nav-link py-0 px-2" href="#"><div class="px-2 font-weight-light">Fast Facts</div></a>
+          <a class="nav-item nav-link py-0 px-2" href="#"><div class="px-2 font-weight-light">Media Assets</div></a>
+          <a class="nav-item nav-link py-0 px-2" href="#"><div class="px-2 font-weight-light">Contact</div></a>
+
+          <div class="dropdown nav-item nav-link py-0 px-3">
+            <button class="btn bg-white border-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-globe"></i><span class="pl-2 font-weight-light">English</span>
+            </button>
+            <div class="dropdown-menu position-absolute" id="dropdownMain" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" id="language" href="#">English</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">Asia-Pacific</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">AU and NZ</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">India</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">United Kingdom</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">United States</a>
+              <a class="dropdown-item font-weight-light" href="#">Français</a>
+              <a class="dropdown-item font-weight-light" href="#">Deutsch</a>
+              <a class="dropdown-item font-weight-light" href="#">Italiano</a>
+              <a class="dropdown-item font-weight-light" href="#">Español (España)</a>
+              <a class="dropdown-item font-weight-light" href="#">Español (América Latina)</a>
+              <a class="dropdown-item font-weight-light" href="#">简体中文</a>
+              <a class="dropdown-item font-weight-light" href="#">日本語</a>
+              <a class="dropdown-item font-weight-light" href="#">한국어</a>
+              <a class="dropdown-item font-weight-light" href="#">Português (Brasil)</a>
+              <a class="dropdown-item font-weight-light" href="#">Português (Portugal)</a>
+              <a class="dropdown-item font-weight-light" href="#">ไทย</a>
+            </div>
+          </div>
+
+          <a class="nav-item nav-link py-0 px-2" href="#"><div class="px-2 font-weight-light"><i class="fas fa-search"></i></div></a>
+        </div>
+      </div>
+
+      <!-- button and collapsed menu -->
+      <a class="d-xl-none navbar-brand py-0 pr-0 pl-2 text-dark font-weight-light" href="#"><i class="couch fas fa-couch ml-1 mr-4"></i>Airbnb Press Room</a>
+      <a class="navbar-toggler py-0 pr-3 pl-2 border-0 position-relative collapsed" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler"><i class="fas fa-bars"></i></a>
+
+      <div class="collapse navbar-collapse px-4 pb-4 font-weight-light bg-white position-absolute" id="navbarMenu">
+        <form>
+          <div>
+            <label class="sr-only" for="inlineFormInputGroup">search</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text bg-white rounded-0 border-right-0 mb-2"><i class="fas fa-search"></i></div>
+              </div>
+              <input type="text" class="form-control rounded-0 border-left-0 mb-2 font-weight-light" id="inlineFormInputGroup" placeholder="What are you looking for?">
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="text-left d-flex align-items-center btn border rounded-0 bg-white w-100 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-globe"></i><span class="pl-4 pr-4 flex-grow-1 font-weight-light">English</span>
+            </button>
+            <div class="dropdown-menu w-100 py-3 position-absolute" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" id="language" href="#">English</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">Asia-Pacific</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">AU and NZ</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">India</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">United Kingdom</a>
+                <a class="dropdown-item font-weight-light ml-3" href="#">United States</a>
+              <a class="dropdown-item font-weight-light" href="#">Français</a>
+              <a class="dropdown-item font-weight-light" href="#">Deutsch</a>
+              <a class="dropdown-item font-weight-light" href="#">Italiano</a>
+              <a class="dropdown-item font-weight-light" href="#">Español (España)</a>
+              <a class="dropdown-item font-weight-light" href="#">Español (América Latina)</a>
+              <a class="dropdown-item font-weight-light" href="#">简体中文</a>
+              <a class="dropdown-item font-weight-light" href="#">日本語</a>
+              <a class="dropdown-item font-weight-light" href="#">한국어</a>
+              <a class="dropdown-item font-weight-light" href="#">Português (Brasil)</a>
+              <a class="dropdown-item font-weight-light" href="#">Português (Portugal)</a>
+              <a class="dropdown-item font-weight-light" href="#">ไทย</a>
+            </div>
+          </div>
+        </form>
+        <div class="position-relative mt-3">
+          <a class="nav-item nav-link px-3" href="#">News</a>
+          <a class="nav-item nav-link px-3" href="#">Features</a>
+          <a class="nav-item nav-link px-3" href="#">About Us</a>
+          <a class="nav-item nav-link px-3" href="#">Fast Facts</a>
+          <a class="nav-item nav-link px-3" href="#">Media Assets</a>
+          <a class="nav-item nav-link px-3" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="pt-4 pt-md-5 pb-1" id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 order-md-2">
+            <div class="aspectRatioBox mb-3" style="background-image: url('./images/image1.jpg')">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="featured-post-content">
+              <div class="featured-post-content-top mb-3">
+                <span class="featured-post-date text-uppercase font-weight-bold">December 3 2018/</span>
+                <br class="visible-xs-block">
+                <span class="featured-post-tag text-uppercase font-weight-bold">Destinations, Experiences, Homes, News</span>
+              </div>
+              <h1 class="featured-post-title mb-3">
+                <a href="#">Airbnb Reveals the 19 Destinations to Visit in 2019</a>
+              </h1>
+              <div class="featured-post-text font-weight-light">
+                <p> Trending destinations include Appalachian retreats in the U.S.; quiet, historic treasures in Europe; elevated and coastal towns in Asia and Latin America; and scenic, high-energy spots in Africa. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <hr class="pb-2" /hr>
+    </div>
+
+    <!-- section 2 -->
+    <div class="pt-2 pt-md-4 pb-1" id="section2">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 line pr-md-4">
+            <div class="aspectRatioBox mb-3" style="background-image: url('./images/image2.jpg')">
+            </div>
+            <div class="featured-post-content">
+              <div class="featured-post-content-top mb-3">
+                <span class="featured-post-date text-uppercase font-weight-bold">December 18 2018/</span>
+                <br class="visible-xs-block">
+                <span class="featured-post-tag text-uppercase font-weight-bold">News, Work</span>
+              </div>
+              <h2 class="featured-post-title mb-3">
+                <a href="#">Airbnb for Work Releases Nasdaq Case Study on Employee Engagement</a>
+              </h2>
+              <div class="featured-post-text font-weight-light">
+                <p>Nasdaq turned to Airbnb to help boost meaningful connections among colleagues; new video content shares insights from Nasdaq and Airbnb on how to foster a sense of belonging at work.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container d-md-none">
+            <hr class="pb-3" /hr>
+          </div>
+
+          <div class="col-12 col-md-3 line px-md-4">
+            <div class="aspectRatioBox mb-3" style="background-image: url('./images/image3.jpg')">
+            </div>
+            <div class="featured-post-content">
+              <div class="featured-post-content-top mb-3">
+                <span class="featured-post-date text-uppercase font-weight-bold">December 12 2018/</span>
+                <br class="visible-xs-block">
+                <span class="featured-post-tag text-uppercase font-weight-bold">Homes, News, Partnerships</span>
+              </div>
+              <h2 class="featured-post-title mb-3">
+                <a href="#">The World’s Tiniest Home on Airbnb Now Available for Bookings</a>
+              </h2>
+              <div class="featured-post-text font-weight-light">
+                <p>Small talk with the host is encouraged in this Home where guests can be no taller than two centimeters.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container d-md-none">
+            <hr class="pb-3" /hr>
+          </div>
+
+          <div class="col-12 col-md-3 pl-md-4">
+            <div class="aspectRatioBox mb-3" style="background-image: url('./images/image4.jpg')">
+            </div>
+            <div class="featured-post-content">
+              <div class="featured-post-content-top mb-3">
+                <span class="featured-post-date text-uppercase font-weight-bold">December 11 2018/</span>
+                <br class="visible-xs-block">
+                <span class="featured-post-tag text-uppercase font-weight-bold">Experiences, Feature, Homes, Listicle</span>
+              </div>
+              <h2 class="featured-post-title mb-3">
+                <a href="#">Airbnb Homes with Access to All-Inclusive Style Amenities</a>
+              </h2>
+              <div class="featured-post-text font-weight-light">
+                <p>How to enjoy the amenities of an all-inclusive experience at one-of-a-kind Homes in the Caribbean.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <hr class="px-2 pb-3 mt-md-5" /hr>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 3 -->
+    <div class="pt-1 pt-md-3 pb-1" id="section3">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-4 line pr-md-4">
+                  <div class="aspectRatioBox mb-3" style="background-image: url('./images/image5.jpg')">
+                  </div>
+                  <div class="featured-post-content">
+                    <div class="featured-post-content-top mb-3">
+                      <span class="featured-post-date text-uppercase font-weight-bold">December 10 2018/</span>
+                      <br class="d-md-none">
+                      <span class="featured-post-tag text-uppercase font-weight-bold">Homes, Community</span>
+                    </div>
+                    <h2 class="featured-post-title mb-3">
+                      <a href="#">Not All Superheroes Wear Capes: Celebrating Our Superhosts Around the World</a>
+                    </h2>
+                    <div class="featured-post-text font-weight-light">
+                      <p>As the year comes to a close, Airbnb is giving special thanks to Superhosts who go above and beyond for every guest with a week full of special recognition.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container d-md-none">
+                  <hr class="pb-3" /hr>
+                </div>
+
+                <div class="col-12 col-md-4 line px-md-4">
+                  <div class="aspectRatioBox mb-3" style="background-image: url('./images/image6.jpg')">
+                  </div>
+                  <div class="featured-post-content">
+                    <div class="featured-post-content-top mb-3">
+                      <span class="featured-post-date text-uppercase font-weight-bold">December 10 2018/</span>
+                      <br class="d-md-none">
+                      <span class="featured-post-tag text-uppercase font-weight-bold">News, Work</span>
+                    </div>
+                    <h2 class="featured-post-title mb-3">
+                      <a href="#">Airbnb for Work Sees Nearly 250 Percent Growth in Germany</a>
+                    </h2>
+                    <div class="featured-post-text font-weight-light">
+                      <p>In Germany, Airbnb for Work sees nearly 250 percent year-over-year growth in companies booking business travel, which includes bookings for business trips, offsites, and team building.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container d-md-none">
+                  <hr class="pb-3" /hr>
+                </div>
+
+                <div class="col-12 col-md-4 pl-md-4">
+                  <div class="aspectRatioBox mb-3" style="background-image: url('./images/image7.jpg')">
+                  </div>
+                  <div class="featured-post-content">
+                    <div class="featured-post-content-top mb-3">
+                      <span class="featured-post-date text-uppercase font-weight-bold">December 7 2018/</span>
+                      <br class="d-md-none">
+                      <span class="featured-post-tag text-uppercase font-weight-bold">Homes, News, Plus</span>
+                    </div>
+                    <h2 class="featured-post-title mb-3">
+                      <a href="#">Rustic Chic to ‘Staying-In-imalism’: Airbnb Plus’ 2019 Design Trends</a>
+                    </h2>
+                    <div class="featured-post-text font-weight-light">
+                      <p>Airbnb Plus predicts its top interior design trends for the year ahead.</p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr class="pb-3 mt-md-5" /hr>
+
+    <!-- footer -->
+
+    <footer class="container">
+      <div class="row pt-3 d-none d-md-flex footerNav">
+        <div class="col-4">
+          <h5 class="mb-3 font-weight-light">Airbnb</h5>
+          <ul class="list-unstyled mb-1">
+            <li><a href="#" class="text-secondary font-weight-light">About</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Careers</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Press</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Policies</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Help</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Diversity & Belonging</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5 class="mb-3 font-weight-light">Discover</h5>
+          <ul class="list-unstyled mb-1">
+            <li><a href="#" class="text-secondary font-weight-light">Trust & Safety</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Travel Credit</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Gift Cards</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Airbnb Citizen</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Business Travel</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Guidebooks</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <h5 class="mb-3 font-weight-light">Hosting</h5>
+          <ul class="list-unstyled mb-1">
+            <li><a href="#" class="text-secondary font-weight-light">Why Host</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Hospitality</a></li>
+            <li><a href="#" class="text-secondary font-weight-light">Responsible Hosting</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row pt-1 pt-md-5">
+        <div class="col-12 pb-3 pb-md-1">
+          <div class="footer-text font-weight-light">
+            <p>The Airbnb Press Room is aimed at journalists. All Homes and Experiences referenced on the Airbnb Press Room are intended purely to inspire and illustrate. Airbnb does not recommend or endorse specific Home or Experience listings on the Airbnb platform.</p>
+          </div>
+        </div>
+        <div class="container">
+          <hr class="pb-3 d-none d-md-block" /hr>
+        </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center mb-4 mb-md-5 mt-1 mt-md-0">
+        <div class="col-auto">
+          <span class="text-secondary font-weight-light">© Airbnb, Inc.<span class="d-none d-md-inline"> All rights reserved.</span></span>
+        </div>
+        <div class="col-auto">
+          <a href="#" class="text-secondary mr-4 font-weight-light">Terms & Privacy</a>
+          <span class="d-none d-md-inline">
+            <a href="#" class="text-secondary mr-4 font-weight-light">Site Map</a>
+            <i class="text-secondary mr-4 fab fa-facebook-f"></i>
+            <i class="text-secondary mr-4 fab fa-twitter"></i>
+            <i class="text-secondary fab fa-instagram"></i>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

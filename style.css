@@ -1,0 +1,155 @@
+/* ----------- Navigation ----------- */
+
+#xlNavbar .navbar-brand, #navbarMenuToggler, #xlNavbar .nav-link {
+  line-height: 80px;
+  color: #333;
+}
+
+#xlNavbar .dropdown-menu {
+  line-height: 30px;
+}
+
+#xlNavbar .nav-link, #navbar .navbar-brand {
+  font-size: 16px;
+}
+
+#navbarMenuToggler, #navbarMenu .nav-link {
+  color: #333;
+}
+
+#navbarMenu .nav-link {
+  padding: 12px 0;
+  font-weight: 300;
+}
+
+#navbarMenu {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 88px;
+  height: 100vh;
+}
+
+#navbarMenuToggler {
+  color: #333;
+  z-index: 1;
+}
+
+#navbarMenuToggler.collapsed {
+  color: #333;
+}
+
+#navbar {
+  z-index: 1;
+  top:0;
+}
+
+#xlNavbar .nav-link div:hover, #navbarMenu a.nav-link:hover, a.dropdown-item:hover {
+    color: #008489;
+    background-color: #fff;
+}
+
+@media (min-width: 1200px) {
+  #navbarMenu {
+  display: none !important;
+  }
+}
+
+#language {
+  color: #008489;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  top:0;
+  left:0;
+  margin-bottom: 48px;
+  overflow-y: auto;
+  z-index:1;
+  box-shadow: 0 0 4px 3px #f1f1f1;
+}
+
+#dropdownMain {
+  top: 15px;
+  left: -90px;
+}
+
+.couch {
+  font-size: 25px;
+  height: 25px;
+  color: #fd5c63;
+}
+
+/* ----------- Hero ----------- */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+#hero {
+    margin-top: 81px;
+}
+
+.featured-post-content-top {
+  font-size: 11px;
+}
+
+.featured-post-tag {
+  color: #00a699;
+}
+
+.featured-post-title a {
+  color: #333;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+h2.featured-post-title a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.featured-post-title a:hover {
+  color: #333;
+}
+
+.featured-post-text {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: .21px;
+}
+
+@media (min-width: 768px) {
+  .line {
+    border-right: 1px solid #dbdbdb;
+  }
+}
+
+
+/* ----------- Footer ----------- */
+
+.footerNav h5, .footerNav a, .footer-text {
+  font-size: 15px;
+}
+
+.footerNav h5 {
+  line-height: 16px;
+}
+
+.footerNav .social {
+  font-size: 18px;
+  height: 18px;
+}
+
+
+/* ----------- Images ----------- */
+
+.aspectRatioBox {
+  padding-top: calc(2 / 3 * 100%); /* aspect ratio 3:2 */
+  background-size: cover;
+  background-position: center;
+}
